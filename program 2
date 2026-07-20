@@ -1,0 +1,29 @@
+def accepts(string):
+    if string.endswith("ab"):
+        return True
+    return False
+
+strings = [
+    "ab",
+    "aab",
+    "babab",
+    "aa",
+    "aba",
+    "cab",
+    "abc"
+]
+print("String\tAccepted")
+print("----------------")
+for s in strings:
+    print(f"{s}\t{accepts(s)}")
+
+OUTPUT:
+String  Accepted
+----------------
+ab      True
+aab     True
+babab   True
+aa      False
+aba     False
+cab     True
+abc     False
